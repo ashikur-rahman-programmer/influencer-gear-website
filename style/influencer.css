@@ -33,6 +33,9 @@ body {
   margin: 0 auto;
 }
 /* navbar style start */
+.menu {
+  display: none;
+}
 nav {
   display: flex;
   align-items: center;
@@ -93,4 +96,46 @@ nav {
 }
 .banner-img img {
   width: 100%;
+}
+
+/* mobile responsive */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 30px 10px 50px;
+  }
+
+  .menu {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+    padding: 0px 35px;
+  }
+  .banner-title {
+    font-size: var(--heading-1);
+  }
+}
+
+/* tablet responsive */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    padding: 50px 20px 80px;
+  }
+  .nav-item {
+    gap: 20px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    gap: 50px;
+    text-align: center;
+  }
 }
