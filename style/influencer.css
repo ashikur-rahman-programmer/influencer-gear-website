@@ -14,7 +14,7 @@
   --ternary-color: #3a3a3a9c;
   --color-four: #fff;
   --btn-bg-color: #e02c6d;
-  --heading-1: 3.1rem;
+  --heading-1: 3.3rem;
   --heading-2: 2.2rem;
   --heading-3: 1.8rem;
   --font-para: 1rem;
@@ -98,6 +98,18 @@ nav {
   width: 100%;
 }
 
+/* section sponsors */
+
+.sponsors {
+  padding: 100px 0;
+}
+.sponsor-items {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 60px;
+  padding: 62px 36px;
+}
+
 /* mobile responsive */
 @media screen and (max-width: 768px) {
   nav {
@@ -123,6 +135,17 @@ nav {
   .banner-title {
     font-size: var(--heading-1);
   }
+
+  .sponsors {
+    padding: 50px 0;
+  }
+  .sponsor-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px 30px;
+    place-items: center;
+  }
 }
 
 /* tablet responsive */
@@ -137,5 +160,17 @@ nav {
     flex-direction: column-reverse;
     gap: 50px;
     text-align: center;
+  }
+
+  .sponsors {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .sponsor-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 30px 30px;
+    place-items: center;
   }
 }
