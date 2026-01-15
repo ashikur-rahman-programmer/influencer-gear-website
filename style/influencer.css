@@ -115,7 +115,7 @@ nav {
 }
 /* section collection */
 .collection {
-  margin: 0px 70px;
+  padding: 0px 70px;
   text-align: center;
 }
 
@@ -129,7 +129,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin: 0px 76px 50px;
+  padding: 0px 76px 50px;
+  margin: 0 auto;
 }
 
 .card {
@@ -178,6 +179,43 @@ nav {
   margin: 0px 76px;
   text-align: right;
 }
+
+/* feature */
+.features {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 96px;
+}
+.feature-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.feature-title {
+  font-size: var(--heading-2);
+  color: var(--primary-color);
+}
+.feature-desc {
+  max-width: 500px;
+  width: 100%;
+  font-size: var(--font-para);
+  color: var(--primary-color);
+}
+.btn-box .feature-btn {
+  font-size: var(--font-para);
+  color: var(--color-four);
+  background-color: var(--btn-bg-color);
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 /* mobile responsive */
 @media screen and (max-width: 768px) {
   nav {
@@ -219,7 +257,15 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
-    margin: 0px 30px 20px;
+    padding: 0px 30px 20px;
+  }
+  .see-more a {
+    margin: 0 20px;
+  }
+  .features {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 0;
   }
 }
 
@@ -253,6 +299,11 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin: 0px 30px 20px;
+    padding: 0px 30px 20px;
+  }
+  .features {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 0;
   }
 }
